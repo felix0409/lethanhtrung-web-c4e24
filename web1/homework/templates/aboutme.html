@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me.</title>
+</head>
+<body>
+    <h1>ABOUT ME.</h1>
+    <hr>
+    <div><b>Name:</b> {{ me["Name"] }}</div>
+    <div><b>Job:</b> {{ me["Job"] }}</div>
+    <div><b>School:</b> {{ me["School"] }}</div>
+    </div><b>Hobbies:</b></div>
+    {% for i in me["Hobbies"] %}
+        <div style="text-indent:20px">{{ i }}</div>
+    {% endfor %}
+</body>
+</html>
