@@ -8,7 +8,7 @@ user = db["users"]
 
 app = Flask(__name__)
 
-@app.route("/", methods=['POST', 'GET'])
+@app.route("/register", methods=['POST', 'GET'])
 def register():
     return render_template('serious1.html')
 

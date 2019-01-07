@@ -17,7 +17,7 @@
         
         <div>
             <label for="email">Email: <br> </label>
-            <input type="email" name="email" placeholder="hta@gmail.com">
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="" placeholder="hta@gmail.com">
             <br><br>
         </div>
         
@@ -29,7 +29,7 @@
         
         <div>
             <label for="password">Mật khẩu: <br> </label>
-            <input type="pasword" name="password" placeholder="...">
+            <input type="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="" placeholder="..." >
             <br><br>
         </div>
         
