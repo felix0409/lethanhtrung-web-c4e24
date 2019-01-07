@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng ký tài khoản</title>
+</head>
+<body>
+    <h1>Đăng ký tài khoản</h1>
+    <form method="POST" action="{{url_for('registerdata')}}">
+        <div>
+            <label for="name">Tên đầy đủ: <br> </label>
+            <input type="text" name="name" placeholder="Huỳnh Tuấn Anh">
+            <br><br>
+        </div>
+        
+        <div>
+            <label for="email">Email: <br> </label>
+            <input type="email" name="email" placeholder="hta@gmail.com">
+            <br><br>
+        </div>
+        
+        <div>
+            <label for="username">Tên đăng nhập: <br> </label>
+            <input type="text" name="username" placeholder="...">
+            <br><br>
+        </div>
+        
+        <div>
+            <label for="password">Mật khẩu: <br> </label>
+            <input type="pasword" name="password" placeholder="...">
+            <br><br>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for food in food_items %}
+        <!-- {{ loop.index0 }} numbering -->
+        <a href="/food_detail/{{ loop.index0 }}">Detail</a>    
+        <li>{{ food.name }}</li>
+            <a href="{{ food.video }}" target="_blank">
+                <img src="{{ food.image }}" alt="{{ food["name"] }}">
+            </a>
+            <div><a href="{{ food.link }}" target="_blank">ORDER HERE!</a></div>
+        {% endfor %}
+    </ul>>
+</body>
+</html>
