@@ -1,0 +1,6 @@
+- No
+- _id is the primary key on elements in a collection. With it, 
+records can be differentiated by default.
+_id is automatically indexed.
+_id field is an ObjectID, on of MongoDB's BSON.
+Users can override _id to something other than an ObjectID.
