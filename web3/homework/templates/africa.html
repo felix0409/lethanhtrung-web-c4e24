@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Africa List</title>
+</head>
+<body>
+    {% for i in list_ %}
+        <div>{{ i["name"] }}</div>
+        <div>{{ i["continent"] }}</div>
+        <div>{{ i["length"] }}</div>
+        <hr>
+    {% endfor %}
+</body>
+</html>

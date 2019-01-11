@@ -19,12 +19,6 @@ def register():
   if request.method == "GET":
     return render_template('serious1.html')
   if request.method == "POST":
-    user_form = {
-    "name": request.form['name'],
-    "email": request.form['email'],
-    "username": request.form["username"],
-    "password": request.form["password"],
-    }
     u = Users(name=request.form['name'], 
               email=request.form['email'], 
               username=request.form['username'], 
