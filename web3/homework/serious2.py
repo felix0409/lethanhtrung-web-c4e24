@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from models.river import River
-import mlab
-mlab.connect()
+import serious1
+serious1.connect()
 
 
 app = Flask(__name__)
