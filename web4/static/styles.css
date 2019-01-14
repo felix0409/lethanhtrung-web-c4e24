@@ -1,0 +1,42 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+#root {
+    display: flex;
+    height: 100%;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+.form_label {
+    display: inline-block;
+    min-width: 120px;
+}
+
+.btn_login {
+    float: right;
+    border-radius: 3px;
+    background-color: #2a6fd6;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.mb_2 {
+    margin-bottom: 16px;
+}
+
+input {
+    border-radius: 6px;
+    border: solid 1px #cccccc; 
+    font-size: 1.1rem;
+}

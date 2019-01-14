@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+</head>
+<body>
+    <div class="root">
+        <form action="" method="POST">
+                <label for="" class="label">Model</label>
+                <input type="text" name="model" placeholder="e.g. Honda"> <br>
+        
+                <label for="" class="label">Daily fee (VND)</label>
+                <input type="number" name="fee" value="100000"> <br>
+        
+                <label for="" class="label">Image</label>
+                <input type="text" name="image" placeholder="e.g. https://hondaxemay"> <br>
+        
+                <label for="" class="label">Year</label>
+                <input type="number" name="year" placeholder="e.g. 2013"> <br>
+                
+                <button class="btn_submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
